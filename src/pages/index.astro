@@ -1,0 +1,240 @@
+
+---
+import SiteLayout from '@/layouts/SiteLayout.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import { site } from '@/data/site';
+import { projects } from '@/data/projects';
+
+const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+---
+
+<SiteLayout title={`${site.name} · Technology & Architecture`}>
+  <!-- HERO -->
+  <section class="hero container home-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="status-dot"></span>
+        DATA ENGINEERING · ARCHITECTURE · LEADERSHIP
+      </p>
+
+      <h1>
+        Building technology
+        <br />
+        <em>with purpose.</em>
+      </h1>
+
+      <p class="hero-intro">
+        I'm {site.name}, a Data Engineer focused on designing scalable data
+        platforms, solving complex business problems and turning technical
+        ideas into reliable, production-ready systems.
+      </p>
+
+      <p class="home-hero-secondary">
+        My experience spans enterprise data engineering, cloud architecture,
+        analytics and applied AI. I'm particularly interested in the space
+        where engineering decisions, business priorities and technology
+        strategy come together.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href={`${baseUrl}work/`}>
+          Explore my work <span>↗</span>
+        </a>
+        <a class="button button-quiet" href={`${baseUrl}journey/`}>
+          Career journey <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <aside class="hero-aside home-hero-aside" aria-label="Current role and focus areas">
+      <p class="aside-label">CURRENT ROLE</p>
+      <h3>Data Engineer 2</h3>
+      <p class="aside-role">Equifax Analytics</p>
+
+      <div class="aside-rule"></div>
+      <p class="aside-label">FOCUS AREAS</p>
+      <div class="focus-tags">
+        {[
+          'Data platforms',
+          'Cloud architecture',
+          'Governance',
+          'Applied AI',
+          'Technical leadership',
+        ].map((item) => <span>{item}</span>)}
+      </div>
+      <p class="aside-note">
+        Engineering reliable systems with business outcomes in mind.
+      </p>
+    </aside>
+  </section>
+
+  <!-- PROFESSIONAL SNAPSHOT -->
+  <section class="intro-band snapshot-band">
+    <div class="container">
+      <div class="snapshot-grid">
+        <div>
+          <p class="eyebrow">CAREER AT A GLANCE</p>
+          <h2>Beyond individual pipelines.</h2>
+          <p>
+            Across credit, financial, automobile and supply chain analytics,
+            I’ve helped build the frameworks, pipelines and controls that make
+            data platforms scalable, reliable and useful to the business.
+          </p>
+        </div>
+
+        <div class="snapshot-stat">
+          <strong>~22M</strong>
+          <span>Records processed daily across Equifax</span>
+        </div>
+
+        <div class="snapshot-stat">
+          <strong>225+</strong>
+          <span>Tables across Equifax and Sigmoid platforms</span>
+        </div>
+
+        <div class="snapshot-stat">
+          <strong>205+</strong>
+          <span>
+            Pipelines built, migrated or supported at Equifax, Sigmoid and
+            Daimler
+          </span>
+        </div>
+
+        <div class="snapshot-stat">
+          <strong>3,000+</strong>
+          <span>KPIs across credit and plant analytics</span>
+        </div>
+      </div>
+      <p class="snapshot-footnote">
+        Combined figures from Equifax, Sigmoid and Daimler projects; each metric
+        reflects its projects’ reported scope.
+      </p>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section class="section container">
+    <SectionHeading
+      eyebrow="SELECTED WORK"
+      title="A few things I’ve been building."
+      description="Enterprise data platforms, document AI and independent research."
+    />
+
+    <div class="project-grid home-project-grid">
+      {projects.slice(0, 3).map((project) => (
+        <a
+          class="project-card"
+          href={`${baseUrl}work/#${project.slug}`}
+        >
+          <div class="project-topline">
+            <span>{project.number} / SELECTED WORK</span>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <p class="project-category">{project.category}</p>
+          <h3>{project.title}</h3>
+          <p class="project-summary">{project.summary}</p>
+
+          <div class="tag-list">
+            {project.capabilities.slice(0, 4).map((item) => (
+              <span>{item}</span>
+            ))}
+          </div>
+
+          <p class="project-status">{project.status}</p>
+        </a>
+      ))}
+    </div>
+
+    <a class="text-link" href={`${baseUrl}work/`}>
+      Explore all projects and writing <span>→</span>
+    </a>
+  </section>
+
+  <!-- CAREER SNAPSHOT -->
+  <section class="section container career-preview">
+    <div class="career-preview-copy">
+      <p class="eyebrow">CAREER & EDUCATION</p>
+      <h2>
+        Different industries.
+        <br />
+        <em>One continuous journey.</em>
+      </h2>
+      <p>
+        From manufacturing and transportation systems to financial
+        analytics, each experience has added a different dimension to
+        how I approach technology and business problems.
+      </p>
+
+      <a class="text-link" href={`${baseUrl}journey/`}>
+        Explore my career journey <span>→</span>
+      </a>
+    </div>
+
+    <div class="career-preview-list">
+      <div class="career-preview-item">
+        <span>2026 — PRESENT</span>
+        <div>
+          <h3>Equifax Analytics</h3>
+          <p>Data Engineer 2</p>
+        </div>
+      </div>
+
+      <div class="career-preview-item">
+        <span>2025 — 2026</span>
+        <div>
+          <h3>Sigmoid Analytics</h3>
+          <p>Data Engineer</p>
+        </div>
+      </div>
+
+      <div class="career-preview-item">
+        <span>2022 — 2025</span>
+        <div>
+          <h3>Daimler Trucks Innovation Center</h3>
+          <p>Data Engineer</p>
+        </div>
+      </div>
+
+      <div class="career-preview-item">
+        <span>2025 — 2026</span>
+        <div>
+          <h3>Indian School of Business</h3>
+          <p>Business Analytics & AI</p>
+        </div>
+      </div>
+
+      <div class="career-preview-item">
+        <span>2018 — 2022</span>
+        <div>
+          <h3>PES University</h3>
+          <p>Computer Science</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="closing-band">
+    <div class="container closing-inner">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>
+          Good ideas start with
+          <br />
+          a meaningful conversation.
+        </h2>
+        <p>
+          Interested in data, architecture, emerging technology or
+          opportunities to build something meaningful? Let's connect.
+        </p>
+      </div>
+
+      <a class="button button-light" href={`${baseUrl}contact/`}>
+        Get in touch <span>↗</span>
+      </a>
+    </div>
+  </section>
+</SiteLayout>

@@ -1,0 +1,13 @@
+---
+import { site } from '@/data/site';
+---
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© {new Date().getFullYear()} {site.name}. Built with intention.</p>
+    <div class="footer-links">
+      <a href={site.links.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href={site.links.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href={`mailto:${site.email}`}>Email ↗</a>
+    </div>
+  </div>
+</footer>

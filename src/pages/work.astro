@@ -1,0 +1,59 @@
+---
+import SiteLayout from '@/layouts/SiteLayout.astro';
+import { projects } from '@/data/projects';
+---
+
+<SiteLayout title="Selected Work">
+  <section class="page-hero container work-page-hero">
+    <p class="eyebrow">SELECTED WORK</p>
+    <h1>
+      Engineering data platforms.
+      <br />
+      <em>Exploring intelligent systems.</em>
+    </h1>
+    <p class="work-hero-context">Understanding business.</p>
+    <div class="work-hero-copy">
+      <p>
+        A collection of professional projects, applied AI work and independent
+        research — spanning enterprise data engineering, cloud architecture,
+        intelligent document processing and financial markets.
+      </p>
+      <p>
+        Each project reflects a different part of how I approach technology:
+        understanding the problem, exploring the possibilities and building
+        solutions that create meaningful value.
+      </p>
+    </div>
+  </section>
+  <section class="section container work-list">
+    {projects.map((project) => (
+      <article class="work-entry" id={project.slug}>
+        <div class="work-number">{project.number}</div>
+        <div>
+          <p class="eyebrow">{project.category}</p>
+          <h2>{project.title}</h2>
+          <p>{project.summary}</p>
+          <div class="tag-list">
+            {project.capabilities.map((item) => (
+              <span>{item}</span>
+            ))}
+          </div>
+          {project.link && (
+            <a
+              href={project.link}
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read on Medium
+              <span aria-hidden="true">↗</span>
+            </a>
+          )}
+          <p class="project-status">
+            {project.status} · Detailed case study to be added
+          </p>
+        </div>
+      </article>
+    ))}
+  </section>
+</SiteLayout>

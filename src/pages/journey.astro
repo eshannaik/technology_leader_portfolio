@@ -1,0 +1,486 @@
+---
+import SiteLayout from '@/layouts/SiteLayout.astro';
+import { site } from '@/data/site';
+---
+
+<SiteLayout
+  title={`Career Journey · ${site.name}`}
+  description="Explore Eshan Naik's career experience and education."
+>
+  <section class="page-hero container">
+    <p class="eyebrow">CAREER &amp; EDUCATION</p>
+    <h1>
+      A journey of
+      <br />
+      <em>continuous growth.</em>
+    </h1>
+    <p class="hero-intro">
+      From building enterprise data systems in manufacturing and transportation
+      to designing cloud-based analytical platforms in financial services, my
+      career has been shaped by diverse challenges and continuous learning.
+      Alongside professional experience, my academic journey has expanded my
+      perspective across data science, machine learning and business analytics.
+      Together, these experiences have shaped how I approach technology, solve
+      business problems and take on greater ownership.
+    </p>
+  </section>
+  <section class="section container journey-section">
+    <h2>Career &amp; education</h2>
+    <p class="journey-intro">
+      A few milestones that have shaped my growth across technology and
+      analytics.
+    </p>
+    <div
+      class="journey-timeline"
+      role="list"
+      aria-label="Career and education timeline"
+    >
+      <div class="journey-timeline-track" aria-hidden="true">
+        <div class="journey-timeline-progress"></div>
+      </div>
+      <div
+        class="journey-event journey-overlap-event"
+        role="listitem"
+        aria-label="ISB study overlapped with Sigmoid and Equifax roles"
+      >
+        <article class="journey-card journey-isb-card">
+          <p class="eyebrow">EDUCATION · PART-TIME ALONGSIDE WORK</p>
+          <h3>Indian School of Business</h3>
+          <p class="journey-card-date">July 2025 - October 2026</p>
+          <p>
+            Advanced Management Programme in
+            <strong>Business Analytics and AI (AMPBA)</strong>
+          </p>
+          <p class="journey-overlap-note">
+            Completed <strong>while working</strong>, first at
+            <strong>Sigmoid</strong> and then at <strong>Equifax</strong>.
+          </p>
+          <details class="journey-highlights">
+            <summary>View capstone project</summary>
+            <section class="journey-capstone" aria-labelledby="capstone-title">
+              <p class="eyebrow">CAPSTONE PROJECT</p>
+              <h4 id="capstone-title">
+                Thermal Imaging-Based Computer Vision for Ladle Monitoring
+              </h4>
+              <p class="journey-capstone-program">
+                ISB · Advanced Management Programme in Business Analytics and AI
+              </p>
+              <p>
+                Explored the application of
+                <strong>computer vision and machine intelligence</strong> to
+                <strong>industrial ladle monitoring</strong> using
+                <strong>thermal imaging</strong>.
+              </p>
+              <p>
+                The project connected
+                <strong>image-based intelligence</strong> with
+                <strong>practical manufacturing requirements</strong>, applying
+                computer vision and machine learning concepts to an industrial
+                monitoring use case.
+              </p>
+              <p class="journey-capstone-label">Focus areas</p>
+              <ul class="journey-capstone-focus">
+                <li>Thermal imaging and computer vision</li>
+                <li>Machine intelligence for industrial applications</li>
+                <li>Image-based analysis and monitoring</li>
+                <li>Applying AI techniques to manufacturing use cases</li>
+              </ul>
+            </section>
+          </details>
+        </article>
+        <div class="journey-marker">
+          <span>Jul 2025 - Oct 2026</span>
+        </div>
+        <div class="journey-overlap-career">
+          <article class="journey-card journey-overlap-equifax">
+            <p class="eyebrow">EXPERIENCE</p>
+            <h3>Equifax</h3>
+            <p class="journey-card-role">
+              Data Engineer 2 · Analytical Data Mart
+            </p>
+            <p class="journey-card-date">June 2026 - Present</p>
+            <p>
+              Leading implementation of a large-scale Azure Databricks
+              analytical data platform for credit analytics, with reusable
+              pipelines and business-focused data marts.
+            </p>
+            <details class="journey-highlights">
+              <summary>View Equifax highlights</summary>
+              <section class="journey-highlight-panel">
+                <p class="eyebrow">PLATFORM ENGINEERING</p>
+                <h4>Enterprise credit analytics data platform</h4>
+                <p class="journey-highlight-program">
+                  Azure Databricks · PySpark · Delta Lake · 20M+ records daily
+                </p>
+
+                <p class="journey-highlight-section-title">
+                  Architecture &amp; platform scale
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Led technical implementation of a large-scale analytical
+                    data platform processing approximately
+                    <strong>20 million records daily</strong> across
+                    <strong>150 source tables</strong>, 60+ dimensions and 10
+                    fact tables.
+                  </li>
+                  <li>
+                    Contributed to the architecture of
+                    <strong>10 business data marts</strong> supporting more than
+                    <strong>2,000 credit KPIs</strong> through Databricks Metric
+                    Views.
+                  </li>
+                  <li>
+                    Designed a reusable,
+                    <strong>metadata-driven PySpark framework</strong> using
+                    configuration and control tables to standardize pipeline
+                    execution across multiple data domains.
+                  </li>
+                  <li>
+                    Established <strong>modular processing patterns</strong> for
+                    pre-execution validation, business transformations, schema
+                    alignment, data quality checks and controlled writes.
+                  </li>
+                </ul>
+
+                <p class="journey-highlight-section-title">
+                  Data quality, reliability &amp; observability
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Implemented{' '}
+                    <strong>
+                      centralized logging, data quality metrics, record-level
+                      quarantine and resilient retry handling
+                    </strong>{' '}
+                    to improve pipeline reliability and operational visibility.
+                  </li>
+                  <li>
+                    Worked on schema alignment and
+                    <strong>schema drift handling</strong> to identify
+                    unexpected structural changes and prevent invalid data from
+                    progressing through downstream workflows.
+                  </li>
+                  <li>
+                    Designed reusable{' '}
+                    <strong>validation and monitoring patterns</strong>,
+                    including centralized quality reporting and SLA-oriented
+                    alerting.
+                  </li>
+                </ul>
+
+                <p class="journey-highlight-section-title">
+                  Governance &amp; data security
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Implemented governance practices using
+                    <strong>Unity Catalog</strong>, role-based access control
+                    (RBAC) and <strong>governed data access</strong> patterns.
+                  </li>
+                  <li>
+                    Worked on{' '}
+                    <strong>
+                      attribute-based access control (ABAC), governed tags and
+                      data masking
+                    </strong>{' '}
+                    to strengthen access management for sensitive credit
+                    datasets.
+                  </li>
+                  <li>
+                    Incorporated{' '}
+                    <strong>data protection and controlled access</strong>{' '}
+                    considerations into the platform architecture and deployment
+                    approach.
+                  </li>
+                </ul>
+
+                <p class="journey-highlight-section-title">
+                  Performance &amp; optimization
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Applied Databricks performance practices including
+                    <strong>Liquid Clustering</strong>, Delta Lake optimization
+                    and <strong>efficient Spark processing</strong> strategies.
+                  </li>
+                  <li>
+                    Leveraged{' '}
+                    <strong>Serverless SQL and Databricks Metric Views</strong>{' '}
+                    to support analytical consumption and reusable KPI
+                    definitions.
+                  </li>
+                  <li>
+                    Considered{' '}
+                    <strong>scalability and execution efficiency</strong>
+                    across high-volume processing and downstream analytical
+                    workloads.
+                  </li>
+                </ul>
+
+                <p class="journey-highlight-section-title">
+                  CI/CD &amp; engineering practices
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Worked on deployment automation using
+                    <strong>Databricks Asset Bundles (DAB)</strong> and Azure
+                    DevOps, structuring resources and configurations for
+                    <strong>controlled environment deployments</strong>.
+                  </li>
+                  <li>
+                    Contributed to <strong>CI/CD workflows</strong> covering
+                    code quality, automated testing, validation and deployment
+                    across development, QA and production environments.
+                  </li>
+                  <li>
+                    Worked with{' '}
+                    <strong>
+                      Azure Repos, feature branching and pull requests
+                    </strong>
+                    , pipeline configuration and release coordination to improve
+                    engineering consistency.
+                  </li>
+                </ul>
+
+                <p class="journey-highlight-section-title">
+                  Technical delivery &amp; team leadership
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Owned technical delivery across{' '}
+                    <strong>
+                      phases 2–4 for a four-member engineering team
+                    </strong>
+                    , translating high-level design into implementation tasks
+                    and delivery milestones.
+                  </li>
+                  <li>
+                    Contributed to{' '}
+                    <strong>
+                      HLDs, technical documentation and architecture decisions
+                    </strong>
+                    , sprint planning and Jira work-item decomposition.
+                  </li>
+                  <li>
+                    <strong>Mentored three developers</strong> on Databricks,
+                    PySpark, implementation practices and platform architecture.
+                  </li>
+                  <li>
+                    Coordinated engineering activities across development,
+                    testing and deployment, helping drive
+                    <strong>
+                      delivery from technical design through production
+                      readiness
+                    </strong>
+                    .
+                  </li>
+                </ul>
+
+                <p class="journey-highlight-section-title">Technology stack</p>
+                <ul class="journey-highlight-focus">
+                  <li>Azure Databricks &amp; PySpark</li>
+                  <li>Delta Lake &amp; Metric Views</li>
+                  <li>Unity Catalog &amp; ABAC</li>
+                  <li>RBAC &amp; Data Masking</li>
+                  <li>Databricks Asset Bundles</li>
+                  <li>Azure DevOps &amp; CI/CD</li>
+                  <li>SQL &amp; Serverless SQL</li>
+                  <li>Jira &amp; Agile Delivery</li>
+                  <li>Data Quality &amp; Observability</li>
+                </ul>
+              </section>
+            </details>
+          </article>
+          <article class="journey-card journey-overlap-sigmoid">
+            <p class="eyebrow">EXPERIENCE</p>
+            <h3>Sigmoid</h3>
+            <p class="journey-card-role">
+              Data Engineer · NAC Supply Reporting
+            </p>
+            <p class="journey-card-date">June 2025 - June 2026</p>
+            <p>
+              Modernized a legacy financial reporting platform, migrating
+              <strong>50+ pipelines</strong> to Azure and improving stability by
+              approximately <strong>40%</strong>.
+            </p>
+            <details class="journey-highlights">
+              <summary>View Sigmoid highlights</summary>
+              <section class="journey-highlight-panel">
+                <p class="eyebrow">DATA PLATFORM MODERNIZATION</p>
+                <h4>Financial reporting on Azure</h4>
+                <p class="journey-highlight-program">
+                  NAC Supply Reporting · Data engineering
+                </p>
+                <p>
+                  Modernized a legacy reporting platform, moving financial data
+                  workflows from SFTP and SSIS to the Azure ecosystem.
+                </p>
+                <p class="journey-highlight-section-title">
+                  Engineering highlights
+                </p>
+                <ul class="journey-highlight-list">
+                  <li>
+                    Migrated <strong>more than 50 SFTP/SSIS pipelines</strong>
+                    to Azure Data Lake, Data Factory and Databricks.
+                  </li>
+                  <li>
+                    Designed Delta Lake storage and ingestion workflows
+                    processing approximately{' '}
+                    <strong>2 million records daily across 75+ tables</strong>.
+                  </li>
+                  <li>
+                    Optimized <strong>Spark transformations</strong> and
+                    implemented{' '}
+                    <strong>incremental, idempotent processing</strong>
+                    using Delta MERGE.
+                  </li>
+                  <li>
+                    Improved pipeline stability and
+                    <strong>reduced batch failures by approximately 40%</strong>
+                    .
+                  </li>
+                  <li>
+                    Implemented{' '}
+                    <strong>
+                      Unity Catalog governance and role-based access controls
+                    </strong>{' '}
+                    across 10+ user groups.
+                  </li>
+                </ul>
+                <p class="journey-highlight-section-title">Focus areas</p>
+                <ul class="journey-highlight-focus">
+                  <li>Azure Data Lake &amp; Data Factory</li>
+                  <li>Databricks &amp; Delta Lake</li>
+                  <li>Incremental, idempotent processing</li>
+                  <li>Unity Catalog &amp; RBAC</li>
+                </ul>
+              </section>
+            </details>
+          </article>
+        </div>
+      </div>
+
+      <article class="journey-event journey-event-right" role="listitem">
+        <div aria-hidden="true"></div>
+        <div class="journey-marker">
+          <span>Jul 2022 - Jun 2025</span>
+        </div>
+        <div class="journey-card">
+          <p class="eyebrow">EXPERIENCE</p>
+          <h3>Daimler Trucks</h3>
+          <p class="journey-card-role">Consultant · TransIT and DSFM</p>
+          <p class="journey-card-date">July 2022 - June 2025</p>
+          <p>
+            My early professional experience was rooted in manufacturing and
+            transportation analytics, working with enterprise-scale data systems
+            and operational reporting.
+          </p>
+          <details class="journey-highlights">
+            <summary>View Daimler highlights</summary>
+            <section class="journey-highlight-panel">
+              <p class="eyebrow">MANUFACTURING &amp; TRANSPORT ANALYTICS</p>
+              <h4>TransIT and DSFM</h4>
+              <p class="journey-highlight-program">
+                Enterprise data platforms · Operational reporting
+              </p>
+              <section class="journey-highlight-group">
+                <h4>
+                  TransIT <span>January 2024 - June 2025</span>
+                </h4>
+                <ul>
+                  <li>
+                    Architected and maintained a
+                    <strong>distributed on-premise data platform</strong> with
+                    <strong>
+                      85+ production pipelines and 100+ SAP integrations
+                    </strong>
+                    .
+                  </li>
+                  <li>
+                    Designed dimensional data models supporting transportation
+                    analytics across <strong>5,000+ suppliers</strong> and
+                    multiple European plants.
+                  </li>
+                  <li>
+                    Owned ETL orchestration and monitoring, sustaining a
+                    <strong>99.8% SLA</strong>.
+                  </li>
+                  <li>
+                    Built KPI data architecture powering
+                    <strong>30+ Tableau dashboards</strong> for
+                    <strong>operational and shop-floor analytics</strong>.
+                  </li>
+                </ul>
+              </section>
+              <section class="journey-highlight-group">
+                <h4>
+                  DSFM <span>July 2022 - December 2023</span>
+                </h4>
+                <ul>
+                  <li>
+                    Independently designed and deployed
+                    <strong>
+                      10+ plant-specific analytics boards covering 100+ KPIs
+                    </strong>
+                    .
+                  </li>
+                  <li>
+                    Built{' '}
+                    <strong>real-time and batch ingestion pipelines</strong>
+                    integrating Talend, Kafka, Theobald and SQL Server.
+                  </li>
+                  <li>
+                    Supported <strong>60+ monitored pipelines</strong>,
+                    achieving <strong>99.5% operational reliability</strong>.
+                  </li>
+                  <li>
+                    Implemented <strong>observability and logging</strong> to
+                    improve production monitoring and incident response.
+                  </li>
+                </ul>
+              </section>
+              <p class="journey-highlight-section-title">Focus areas</p>
+              <ul class="journey-highlight-focus">
+                <li>Enterprise data architecture</li>
+                <li>SAP integrations &amp; ETL orchestration</li>
+                <li>Transportation and plant analytics</li>
+                <li>Observability &amp; reliability</li>
+              </ul>
+            </section>
+          </details>
+        </div>
+      </article>
+
+      <article class="journey-event journey-event-left" role="listitem">
+        <div class="journey-card journey-pes-card">
+          <div class="journey-pes-header">
+            <div>
+              <p class="eyebrow">EDUCATION</p>
+              <h3>PES University</h3>
+              <p class="journey-pes-degree">B.Tech, Computer Science</p>
+              <p class="journey-card-date">August 2018 - June 2022</p>
+            </div>
+          </div>
+          <div class="journey-pes-details">
+            <div>
+              <p class="journey-pes-label">Specialization</p>
+              <p class="journey-pes-value">
+                Data Science &amp; Machine Learning
+              </p>
+            </div>
+            <div>
+              <p class="journey-pes-label">Academic record</p>
+              <p class="journey-pes-score">7/8</p>
+              <p class="journey-pes-caption">Semesters with distinction</p>
+            </div>
+          </div>
+        </div>
+        <div class="journey-marker">
+          <span>Aug 2018 - Jun 2022</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </article>
+    </div>
+  </section>
+</SiteLayout>

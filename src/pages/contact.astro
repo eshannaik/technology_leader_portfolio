@@ -1,0 +1,40 @@
+---
+import SiteLayout from '@/layouts/SiteLayout.astro';
+import { site } from '@/data/site';
+---
+
+<SiteLayout title="Contact">
+  <section class="page-hero container">
+    <p class="eyebrow">CONTACT</p>
+    <h1>
+      Let's talk about
+      <br />
+      <em>building what matters.</em>
+    </h1>
+    <p class="hero-intro">
+      For conversations about technology, architecture, engineering leadership
+      or interesting opportunities.
+    </p>
+    <a class="button button-primary" href={`mailto:${site.email}`}>
+      Email me <span>↗</span>
+    </a>
+  </section>
+  <section class="section container narrow-copy contact-details">
+    <p>
+      <span>Email</span>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+    </p>
+    <p>
+      <span>LinkedIn</span>
+      <a href={site.links.linkedin} target="_blank" rel="noreferrer">
+        Professional profile ↗
+      </a>
+    </p>
+    <p>
+      <span>GitHub</span>
+      <a href={site.links.github} target="_blank" rel="noreferrer">
+        Code and projects ↗
+      </a>
+    </p>
+  </section>
+</SiteLayout>
