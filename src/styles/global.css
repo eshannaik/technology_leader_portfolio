@@ -1343,6 +1343,26 @@ h1 em,
   color: var(--muted);
   font-size: 0.85rem;
 }
+.home-quote-band {
+  padding-block: 34px 72px;
+}
+.home-quote-band .container {
+  padding-block: 26px 30px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.home-quote-band .eyebrow {
+  margin-bottom: 14px;
+}
+.home-quote-band blockquote {
+  margin: 0;
+  color: #d3deed;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 550;
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
 .closing-inner > div > p:last-child {
   max-width: 580px;
   color: var(--muted);
@@ -1386,6 +1406,204 @@ h1 em,
   .career-preview-item {
     grid-template-columns: 105px minmax(0, 1fr);
     gap: 12px;
+  }
+}
+.about-hero {
+  padding-bottom: 48px;
+}
+.about-hero .hero-intro {
+  max-width: 700px;
+  font-size: 1.12rem;
+}
+.about-story {
+  padding-top: 40px;
+}
+.about-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  column-gap: clamp(32px, 7vw, 80px);
+  align-items: start;
+  max-width: 950px;
+  margin-bottom: 38px;
+}
+.about-section-heading .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 4px;
+}
+.about-section-heading h2,
+.about-practice h2,
+.about-learning h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+}
+.about-section-heading > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.about-career-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.about-career-card,
+.about-curiosity {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: linear-gradient(145deg, #121e30, #0f1726);
+}
+.about-card-meta {
+  margin-bottom: 22px;
+  color: #8fb5ed;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.about-career-card h3,
+.about-curiosity h3 {
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+.about-career-card > p:last-child,
+.about-practice-copy p,
+.about-learning-copy > p:not(.eyebrow),
+.about-curiosity > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.about-practice {
+  background: var(--paper);
+}
+.about-practice-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(36px, 8vw, 92px);
+  padding-block: 76px;
+}
+.about-practice-inner h2 {
+  max-width: 460px;
+}
+.about-practice-copy p + p {
+  margin-top: 18px;
+}
+.about-learning {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.7fr);
+  gap: clamp(36px, 8vw, 92px);
+  align-items: start;
+}
+.about-learning h2 {
+  margin-bottom: 20px;
+}
+.about-learning-copy > p:not(.eyebrow) + p {
+  margin-top: 14px;
+}
+.about-learning-copy .text-link {
+  margin-top: 22px;
+}
+.about-beyond {
+  padding-block: 76px 88px;
+  background: var(--paper);
+}
+.about-beyond-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 34px clamp(36px, 8vw, 92px);
+}
+.about-beyond-heading h2 {
+  max-width: 430px;
+  margin-bottom: 16px;
+  font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+}
+.about-beyond-heading > p:last-child {
+  max-width: 400px;
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.about-interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.about-interest-card {
+  padding: 21px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #0e1726;
+}
+.about-interest-number {
+  color: #8fb5ed;
+  font: 0.7rem ui-monospace, monospace;
+}
+.about-interest-card h3 {
+  margin: 20px 0 8px;
+  font-size: 1.05rem;
+}
+.about-interest-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+.about-quote-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding-top: 10px;
+}
+.about-quote-row blockquote {
+  position: relative;
+  margin: 0;
+  padding: 22px 24px 22px 54px;
+  border-top: 1px solid #385075;
+  color: #d3deed;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.55;
+}
+.about-quote-row blockquote span {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  color: var(--blue);
+  font-size: 2rem;
+  line-height: 1;
+}
+@media (max-width: 800px) {
+  .about-section-heading,
+  .about-practice-inner,
+  .about-learning,
+  .about-beyond-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .about-section-heading .eyebrow {
+    grid-column: auto;
+  }
+  .about-career-cards {
+    grid-template-columns: 1fr;
+  }
+  .about-practice-inner {
+    padding-block: 60px;
+  }
+}
+@media (max-width: 560px) {
+  .about-interest-grid,
+  .about-quote-row {
+    grid-template-columns: 1fr;
+  }
+  .about-beyond {
+    padding-block: 58px 66px;
   }
 }
 .project-link {

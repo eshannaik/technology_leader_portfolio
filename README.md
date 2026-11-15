@@ -39,7 +39,6 @@ npm run preview
 ```text
 src/
   components/       Reusable navigation, footer and content components
-  content/insights/ Markdown articles (future)
   data/             Site identity and project content
   layouts/          Shared page shell and metadata
   pages/            Route-level pages
